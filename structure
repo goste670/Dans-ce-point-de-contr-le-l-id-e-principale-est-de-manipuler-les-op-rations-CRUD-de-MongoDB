@@ -1,0 +1,20 @@
+mon_projet/
+|-- node_modules/              // Dossier généré par npm
+|-- public/                   // Dossier pour les fichiers statiques
+|   |-- css/                  // Dossier pour les fichiers CSS
+|   |   |-- style.css         // Fichier CSS principal
+|   |-- js/                   // Dossier pour les fichiers JavaScript
+|   |   |-- script.js         // Fichier JavaScript principal
+|-- views/                    // Dossier pour les fichiers de vue (EJS)
+|   |-- index.ejs             // Page d'accueil
+|   |-- contact.ejs           // Page de détails du contact
+|   |-- add_contact.ejs       // Page d'ajout de contact
+|   |-- edit_contact.ejs      // Page de modification de contact
+|-- routes/                   // Dossier pour les fichiers de routage
+|   |-- index.js              // Routage pour la page d'accueil
+|   |-- contacts.js           // Routage pour les opérations sur les contacts
+|-- models/                   // Dossier pour les fichiers de modèle (MongoDB)
+|   |-- contact.js            // Modèle de données pour les contacts
+|-- app.js                    // Fichier principal de l'application
+|-- package.json              // Fichier de configuration de npm
+|-- package-lock.json         // Fichier de verrouillage des dépendances

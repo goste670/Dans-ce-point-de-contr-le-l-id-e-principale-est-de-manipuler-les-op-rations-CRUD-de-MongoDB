@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modifier le contact</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Modifier le contact</h1>
+    <form action="/contacts/:id" method="post">
+      <!-- Utilisez les données du contact à modifier dans les champs de formulaire -->
+      <label for="nom">Nom:</label>
+      <input type="text" id="nom" name="nom" value="<%= contact.nom %>" required>
+
+      <label for="prenom">Prénom:</label>
+      <input type="text" id="prenom" name="prenom" value="<%= contact.prenom %>" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" value="<%= contact.email %>" required>
+
+      <label for="age">Âge:</label>
+      <input type="number" id="age" name="age" value="<%= contact.age %>" required>
+
+      <button type="submit">Enregistrer les modifications</button>
+    </form>
+  </div>
+  <script src="/js/script.js"></script>
+</body>
+</html>
